@@ -19,6 +19,12 @@ git clone https://github.com/junho-ccnets/causal-learning
 pip3 install -r requirements.txt
 ```
 
+# Pretrained Models
+**Update 27/08/2022:**
+- explainer: https://ccnets.org/models?category=CelebA&models=explainer
+- reasoner: https://ccnets.org/models?category=CelebA&models=reaonser
+- producer: https://ccnets.org/models?category=CelebA&models=producer
+
 ## Dataset
 If you just want to test training, you should download your dataset
 ```

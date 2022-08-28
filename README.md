@@ -5,7 +5,7 @@
 
 Causal Cooperative Nets(CCNets) is the brand new ML frameworks that are composed of three neural network models; explainer, reasoner and producer. This ML training is for discovering causal relationships in statistics and explaining black boxes in the ML modeling. 
 
-Compared to supervised or generative learning, which trains one or two models on the data, this method cooperatively trains three models (explainer, reasoner, producer) simultaneously. Normally, supervised learning receives an observation as input and predicts its label that learn association between the observation space and label space. The causal learning takes an observation and its label as input that learn causal relationship between the observation space and label space.
+Compared to supervised or generative learning, which trains one or two models on the data, this method cooperatively trains three models (explainer, reasoner, producer) simultaneously. Normally, supervised learning receives an observation as input and predicts its label that learn association between the observation space and label space. However, CCNets take an observation and its label as input that learn causal relationship between the observation space and label space.
 
 ## CCNet models
 - **Explainer**: The explainer model learns data explanation for labels. It receives observed data as input and outputs latent vector(causal explantion vector) in the explantory space. Neural networks that are used for Classifier or regressor can be placed as Explainer in CCNets.

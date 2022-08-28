@@ -1,16 +1,18 @@
 # CCN
   https://ccnets.org/tutorials?category=CelebA
   
-## What is this?
+## Causal Learning with CCNets
 
-CCNs learns a causal explanation that improves generalization of real world data by reducing the bias caused by misleading correlations lacking any causation. CCNs is capable of performing any common task of machine learning such as regression or prediction by using the explainer and reasoner models, more specifically CCNs is a framekow that allows to incorporate any pretrained or previously designed model. The reconstruction of input observations or labels through the explainer and producer guarantees that the framework can efficiently learn a causal vector explanation of the input data while CCNs also offers causal inference and generation.
+Causal Cooperative Nets(CCNets) is the brand new ML frameworks that are composed of three neural network models; explainer, reasoner and producer.
+This ML training is for discovering causal relationships in statistics and explaining black boxes in the ML modeling. Compared to supervised or generative learning, which trains one or two models on the data, this method cooperatively trains three models (explainer, reasoner, producer) simultaneously.
+The causal learning with CCNets is different from supervised learning. Normally, supervised learning receives an observation as input and predicts its label that learn association between the observation space and label space. The causal learning takes an observation and its label as input that learn causal relationship between the observation space and label space.
 
-## CCN models
-- **Explainer**: Explainer's role is to explain data. Output of Explainer is predicted label of input data: Explaination. Explainer's backborn network can be Image Classifier or MLP which is determined by the use of CCN.
+## CCNet models
+- **Explainer**: The explainer model learns data explanation for labels. It receives observed data as input and outputs latent vector(causal explantion vector) in the explantory space. Neural networks that are used for Classifier or regressor can be placed as Explainer in CCNets.
 
 - **Reasoner**: Reasoner's role is to infer from data and explaination. Reasoner's output is inferred label. Reasoner's backborn network is basically same architecture with Expainer. The difference from Explainer is it's input is not only data but explaination.
 
-- **Producer**: Producer's role is reconstruction or generation from label. It's input can be (label, explaination) or (inferred_label, explaination). Output is generated data which is same type of input data but deformed.
+- **Producer**: The producer model learns to generate data with an explanation. It receives a label and a causal explantion vector as input and outputs generated data.
 
 # Setup
 ```

@@ -10,7 +10,7 @@ The causal learning with CCNets is different from supervised learning. Normally,
 ## CCNet models
 - **Explainer**: The explainer model learns data explanation for labels. It receives observed data as input and outputs latent vector(causal explantion vector) in the explantory space. Neural networks that are used for Classifier or regressor can be placed as Explainer in CCNets.
 
-- **Reasoner**: Reasoner's role is to infer from data and explaination. Reasoner's output is inferred label. Reasoner's backborn network is basically same architecture with Expainer. The difference from Explainer is it's input is not only data but explaination.
+- **Reasoner**: The reasoner model learns to infer a label with an explanation. It receives observed data and a causal explantion vector as input and outputs a inferred label in the label space. Neural networks that are used for Classifier or regressor can be placed as Reasoner in CCNets.
 
 - **Producer**: The producer model learns to generate data with an explanation. It receives a label and a causal explantion vector as input and outputs generated data.
 
